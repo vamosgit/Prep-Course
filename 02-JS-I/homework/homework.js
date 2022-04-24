@@ -60,10 +60,11 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x = y){
+  if (x === y){
     return true;
   }
   return false;
+}
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
@@ -97,7 +98,7 @@ function mayorQueCincuenta(num) {
   }
   return false;
 }
-}
+
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
@@ -171,6 +172,10 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if (numero > 0){
     return "Es positivo";
+  }else{
+    if (numero === 0){
+      return false;
+    }
   }
   return "Es negativo";
 }
@@ -193,7 +198,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "Hola" + " " + apellido + "!";
+  return "Hola " + nombre + "!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
